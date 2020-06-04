@@ -6,10 +6,10 @@ body{
 
 #head_name{
     font-weight: 100;
-    font-size: 5.4rem;
+    font-size: 7rem;
 }
 #subhead{
-    font-size: 2.4rem;
+    font-size: 4vw;
     height: fit-content;
     color: #000;
 }
