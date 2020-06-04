@@ -6,19 +6,38 @@ body{
 
 #head_name{
     font-weight: 100;
-    font-size: 7rem;
+    font-size: 7vw;
 }
 #subhead{
-    font-size: 4vw;
+    font-size: 3vw;
     height: fit-content;
     color: #000;
 }
 .container{
     
 }
-a:link{
+#subhead a:link{
     color:black;
 }
-a:visited{
+#subhead a:visited{
     color:black;
 }
+#wa_btn{
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #subhead{
+        font-size: 2rem;
+        height: fit-content;
+        color: #000;
+    }
+    #head_name{
+        font-weight: 100;
+        font-size: 3.4rem;    
+  }
