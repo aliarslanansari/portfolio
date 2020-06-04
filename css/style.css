@@ -9,7 +9,7 @@ body{
     font-size: 7vw;
     margin-top: 100px;
 }
-#subhead{
+#subhead{ 
     font-size: 3vw;
     height: fit-content;
     color: #000;
@@ -29,9 +29,15 @@ body{
     font-size: 20px;
 }
 
+#head_img{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
+    #head_img{
+        display: block;
+    }
     body {
-      background-color: lightblue;
     }
     #subhead{
         font-size: 1.4rem;
@@ -41,5 +47,5 @@ body{
     #head_name{
         font-weight: 100;
         font-size: 2.4rem;
-        margin-top: 0rem;
+        margin-top: 10px;
   }
