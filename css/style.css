@@ -5,9 +5,20 @@ body{
 }
 
 #head_name{
-    font-weight: lighter;
-    font-size: 7vw;
+    font-weight: 100;
+    font-size: 5.4rem;
+}
+#subhead{
+    font-size: 2.4rem;
+    height: fit-content;
+    color: #000;
 }
 .container{
     
+}
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
 }
