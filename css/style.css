@@ -46,21 +46,26 @@ body{
     background-color: rgba(15, 15, 15, 0.05);
 }
 .title{
-    margin-top: 20px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 5px 0;
     font-weight: bolder;
     font-size: large;
     width:120px;
     display: block;
     align-self: center;
+    padding: 2px;
 }
 .section{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-items: center;
+}
+.line-one {
+    height: 2px;
+    width: 100px;
+    background: #E91E63;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
 .content{
     margin-top: 20px;
