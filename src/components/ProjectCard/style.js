@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
 
 export const ProjectTitle = styled.a`
-  margin: 0.5rem 0 0 0;
   font-family: DM Serif Text;
   font-style: normal;
   font-weight: normal;
