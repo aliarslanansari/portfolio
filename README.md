@@ -1,2 +1,0 @@
-# portfolio
-*Added Projects Names
