@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
 import MobileNavbar from '../MobileNavbar'
+import { useMediaQuery } from 'react-responsive'
 
 const StyledNavbar = styled.nav`
+  user-select: none;
   background-color: white;
   height: 4rem;
   display: flex;
@@ -17,8 +19,10 @@ const StyledNavbar = styled.nav`
 `
 const LogoText = styled.h1`
   font-weight: 400;
+  cursor: pointer;
   font-family: 'DM Serif Text';
   font-size: 2rem;
+  white-space: nowrap;
 `
 
 const Menu = styled.ul`
@@ -33,12 +37,13 @@ const Menu = styled.ul`
 const MenuItem = styled.li`
   font-size: 1.2rem;
   color: #3355ff;
+  cursor: pointer;
   margin-left: 3rem;
   ${getClickableLinkStyle()}
 `
 
 const Navbar = () => {
-  const isMobile = false
+  const isMobile = useMediaQuery({ maxWidth: 700 })
   return (
     <StyledNavbar>
       <LogoText>Ali Arslan</LogoText>
