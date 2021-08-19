@@ -1,4 +1,8 @@
-import { css } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
+
+export const colors = {
+  backgroungColor: '#3355ff',
+}
 
 export const getClickableLinkStyle = () => {
   return css`
@@ -13,7 +17,7 @@ export const getClickableLinkStyle = () => {
       height: 1.5px;
       bottom: 0;
       left: 0;
-      background-color: #3355ff;
+      background-color: ${colors.backgroungColor};
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
@@ -23,3 +27,17 @@ export const getClickableLinkStyle = () => {
     }
   `
 }
+
+export const containerPadding = (isMobile) => {
+  console.log({ isMobile })
+  return css`
+    padding: ${isMobile ? '0 1.5rem 0 1.5rem' : '0 15rem 0 15rem'};
+  `
+}
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #F9F9FB;
+    font-family: 'Segoe UI', sans-serif;
+  }
+`
