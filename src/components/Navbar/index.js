@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { getClickableLinkStyle } from '../../utils/styleUtils'
+import { containerPadding, getClickableLinkStyle } from '../../utils/styleUtils'
 import MobileNavbar from '../MobileNavbar'
-import { useMediaQuery } from 'react-responsive'
+import { Typography } from 'antd'
+
+const { Title } = Typography
 
 const StyledNavbar = styled.nav`
   user-select: none;
   background-color: white;
   height: 4rem;
   display: flex;
-  padding: 0 5rem 0 5rem;
+  ${(props) => containerPadding(props.isMobile)}
   position: sticky;
   top: 0;
   align-items: center;
@@ -17,12 +19,14 @@ const StyledNavbar = styled.nav`
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
 `
-const LogoText = styled.h1`
-  font-weight: 400;
+const LogoText = styled(Title)`
+  margin: auto 0;
+  font-weight: 400 !important;
   cursor: pointer;
   font-family: 'DM Serif Text';
-  font-size: 2rem;
+  font-size: 2rem !important;
   white-space: nowrap;
+  align-self: center;
 `
 
 const Menu = styled.ul`
@@ -42,10 +46,9 @@ const MenuItem = styled.li`
   ${getClickableLinkStyle()}
 `
 
-const Navbar = () => {
-  const isMobile = useMediaQuery({ maxWidth: 700 })
+const Navbar = ({ isMobile }) => {
   return (
-    <StyledNavbar>
+    <StyledNavbar isMobile={isMobile}>
       <LogoText>Ali Arslan</LogoText>
       {isMobile ? (
         <MobileNavbar />
