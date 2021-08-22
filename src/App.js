@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar/index'
 import HomePage from './containers/HomePage'
 import { GlobalStyle } from './utils/styleUtils'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import BlogsPage from './containers/BlogsPage'
 import ContactPage from './containers/ContactPage'
 import Footer from './components/Footer/index'
@@ -20,6 +20,7 @@ function App() {
           <Route render={HomePage} exact path='/' />
           <Route render={BlogsPage} exact path='/blog' />
           <Route render={ContactPage} exact path='/contact' />
+          <Route component={() => <Redirect to='/' />} />
         </Switch>
       </Router>
       <Footer />
