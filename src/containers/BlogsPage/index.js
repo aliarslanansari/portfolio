@@ -17,21 +17,42 @@ const BlogsPage = () => {
         readtime='4 minute read'
         description='Learn React Portals, why do we need Portals, and learn how to implement it.'
         link='https://blog.aliarslan.in/react-portals'
-      />{' '}
+      />
       <BlogCard
         title='Learn React Portals like a PRO.'
         time='Aug 2, 2021'
         readtime='4 minute read'
         description='Learn React Portals, why do we need Portals, and learn how to implement it.'
         link='https://blog.aliarslan.in/react-portals'
-      />{' '}
-      {/* <BlogCard
+      />
+      <BlogCard
         title='Learn React Portals like a PRO.'
         time='Aug 2, 2021'
         readtime='4 minute read'
         description='Learn React Portals, why do we need Portals, and learn how to implement it.'
         link='https://blog.aliarslan.in/react-portals'
-      /> */}
+      />
+      <BlogCard
+        title='Learn React Portals like a PRO.'
+        time='Aug 2, 2021'
+        readtime='4 minute read'
+        description='Learn React Portals, why do we need Portals, and learn how to implement it.'
+        link='https://blog.aliarslan.in/react-portals'
+      />
+      <BlogCard
+        title='Learn React Portals like a PRO.'
+        time='Aug 2, 2021'
+        readtime='4 minute read'
+        description='Learn React Portals, why do we need Portals, and learn how to implement it.'
+        link='https://blog.aliarslan.in/react-portals'
+      />
+      <BlogCard
+        title='Learn React Portals like a PRO.'
+        time='Aug 2, 2021'
+        readtime='4 minute read'
+        description='Learn React Portals, why do we need Portals, and learn how to implement it.'
+        link='https://blog.aliarslan.in/react-portals'
+      />
     </PageWrapper>
   )
 }
