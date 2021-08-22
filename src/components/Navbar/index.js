@@ -2,10 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { containerPadding, getClickableLinkStyle } from '../../utils/styleUtils'
 import MobileNavbar from '../MobileNavbar'
-import { Typography } from 'antd'
-
-const { Title } = Typography
-
+import { Link } from 'react-router-dom'
 const StyledNavbar = styled.nav`
   user-select: none;
   background-color: white;
@@ -20,7 +17,8 @@ const StyledNavbar = styled.nav`
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
 `
-const LogoText = styled(Title)`
+const LogoText = styled(Link)`
+  color: black;
   margin: auto 0;
   font-weight: 400 !important;
   cursor: pointer;
@@ -28,6 +26,9 @@ const LogoText = styled(Title)`
   font-size: 2rem !important;
   white-space: nowrap;
   align-self: center;
+  &:hover {
+    color: black;
+  }
 `
 
 const Menu = styled.ul`
@@ -39,26 +40,29 @@ const Menu = styled.ul`
   flex-direction: row;
 `
 
-const MenuItem = styled.li`
+const MenuItem = styled(Link)`
   font-size: 1.2rem;
   color: #3355ff;
   cursor: pointer;
   margin-left: 3rem;
   ${getClickableLinkStyle()}
+  &:hover {
+    color: #3355ff;
+  }
 `
 
 const Navbar = ({ isMobile }) => {
   return (
     <StyledNavbar isMobile={isMobile}>
-      <LogoText>Ali Arslan</LogoText>
+      <LogoText to='/'>Ali Arslan</LogoText>
       {isMobile ? (
         <MobileNavbar />
       ) : (
         <Menu>
-          <MenuItem>Blog</MenuItem>
-          <MenuItem>Project</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Contact</MenuItem>
+          <MenuItem to='/blog'>Blog</MenuItem>
+          <MenuItem to='/project'>Project</MenuItem>
+          <MenuItem to='/about'>About</MenuItem>
+          <MenuItem to='/contact'>Contact</MenuItem>
         </Menu>
       )}
     </StyledNavbar>
