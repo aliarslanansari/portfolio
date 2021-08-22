@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
+import { Link } from 'react-router-dom'
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -50,16 +51,30 @@ const MenuItem = styled.li`
   margin: 1rem 5rem;
   ${getClickableLinkStyle()}
   @media (max-width: 576px) {
-    /* text-align: center; */
+    text-align: center;
   }
 `
-const Menu = ({ open }) => {
+const CustomLink = styled(Link)`
+  color: #3355ff;
+  &:hover {
+    color: #3355ff;
+  }
+`
+const Menu = ({ open, setOpen }) => {
   return (
-    <StyledMenu open={open}>
-      <MenuItem href='/'>Blog</MenuItem>
-      <MenuItem href='/'>Project</MenuItem>
-      <MenuItem href='/'>About</MenuItem>
-      <MenuItem href='/'>Contact</MenuItem>
+    <StyledMenu open={open} onClick={() => setOpen((o) => !o)}>
+      <MenuItem>
+        <CustomLink to='/blog'>Blog</CustomLink>
+      </MenuItem>
+      <MenuItem>
+        <CustomLink to='project'>Project</CustomLink>
+      </MenuItem>
+      <MenuItem>
+        <CustomLink to='about'>About</CustomLink>
+      </MenuItem>
+      <MenuItem>
+        <CustomLink to='contact'>Contact</CustomLink>
+      </MenuItem>
     </StyledMenu>
   )
 }
