@@ -1,8 +1,9 @@
-import React from 'react'
 import PageWrapper from '../../components/PageWrapper'
+import React from 'react'
 import BlogCard from '../../components/BlogCard'
 import { Row, Col } from 'antd'
 import PatternBG from '../../assets/Pattern_Group.svg'
+import { useHistory } from 'react-router-dom'
 import {
   Button,
   ButtonSecondary,
@@ -15,6 +16,10 @@ import {
 } from './styles'
 
 const HomePage = () => {
+  const history = useHistory()
+  const historyPushContact = () => {
+    history.push('/contact')
+  }
   return (
     <>
       <PageWrapper background={PatternBG}>
@@ -30,7 +35,9 @@ const HomePage = () => {
               teaching others to code and organising events like hackathons.
             </CustomSubtitle>
             <Button>See my work</Button>
-            <ButtonSecondary>Contact me</ButtonSecondary>
+            <ButtonSecondary onClick={historyPushContact}>
+              Contact me
+            </ButtonSecondary>
           </Col>
           <HideOnMobileColumn xs={24} sm={24} md={10} lg={10} xl={10}>
             <DeveloperIllustration />

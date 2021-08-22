@@ -17,9 +17,9 @@ function App() {
         <GlobalStyle />
         <Navbar isMobile={isMobile} />
         <Switch>
-          <Route render={HomePage} exact path='/' />
-          <Route render={BlogsPage} exact path='/blog' />
-          <Route render={ContactPage} exact path='/contact' />
+          <Route render={() => <HomePage />} exact path='/' />
+          <Route render={() => <BlogsPage />} exact path='/blog' />
+          <Route render={() => <ContactPage />} exact path='/contact' />
           <Route component={() => <Redirect to='/' />} />
         </Switch>
       </Router>
