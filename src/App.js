@@ -5,6 +5,7 @@ import HomePage from './containers/HomePage'
 import { GlobalStyle } from './utils/styleUtils'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import BlogsPage from './containers/BlogsPage'
+import ContactPage from './containers/ContactPage'
 import Footer from './components/Footer/index'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route render={HomePage} exact path='/' />
           <Route render={BlogsPage} exact path='/blog' />
+          <Route render={ContactPage} exact path='/contact' />
         </Switch>
       </Router>
       <Footer />
