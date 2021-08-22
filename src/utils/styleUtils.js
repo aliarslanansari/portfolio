@@ -29,9 +29,8 @@ export const getClickableLinkStyle = () => {
 }
 
 export const containerPadding = (isMobile) => {
-  console.log({ isMobile })
   return css`
-    padding: ${isMobile ? '0 1.5rem 0 1.5rem' : '0 15rem 0 15rem'};
+    padding: ${isMobile ? '0 1.5rem 0 1.5rem' : '0 10vw 0 10vw'};
   `
 }
 

@@ -9,6 +9,7 @@ const { Title } = Typography
 const StyledNavbar = styled.nav`
   user-select: none;
   background-color: white;
+  z-index: 900;
   height: 4rem;
   display: flex;
   ${(props) => containerPadding(props.isMobile)}

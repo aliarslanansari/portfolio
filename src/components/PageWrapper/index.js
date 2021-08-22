@@ -1,15 +1,25 @@
 import { useMediaQuery } from 'react-responsive'
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { containerPadding } from '../../utils/styleUtils'
 
 const Wrapper = styled.main`
   ${(props) => containerPadding(props.isMobile)}
+  ${(props) =>
+    props.background &&
+    css`
+      background-image: url(${props.background});
+      background-position: bottom;
+    `}
 `
 
-const PageWrapper = ({ children }) => {
+const PageWrapper = ({ children, background }) => {
   const isMobile = useMediaQuery({ maxWidth: 700 })
-  return <Wrapper isMobile={isMobile}>{children}</Wrapper>
+  return (
+    <Wrapper background={background} isMobile={isMobile}>
+      {children}
+    </Wrapper>
+  )
 }
 
 export default PageWrapper
