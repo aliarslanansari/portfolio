@@ -16,7 +16,7 @@ const ProjectCard = () => {
     <ProjectContainer>
       <ProjectImage src={DevResProj} alt='React Portals' />
       <ProjectMetaContainer>
-        <div>
+        <div style={{ marginTop: '0.5rem' }}>
           <ProjectTitle
             href={'https://blog.aliarslan.in/react-portals'}
             target='_blank'

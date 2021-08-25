@@ -19,7 +19,7 @@ const ProjectPage = ({ showTitle }) => {
         </CustomTitle>
       )}
       <Row gutter={16}>
-        {[1, 2, 3, 4].map((i) => (
+        {[1, 2].map((i) => (
           <StyledCol xs={24} key={i} sm={24} md={12} lg={12} xl={12}>
             <ProjectCard />
           </StyledCol>

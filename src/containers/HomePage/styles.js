@@ -83,6 +83,7 @@ export const ButtonSecondary = styled.button`
 export const DeveloperIllustration = styled(DeveloperHello)`
   width: 40vw;
   height: 20rem;
+  margin-top: 3rem;
   @media (max-width: 768px) {
     width: 80vw;
   }
