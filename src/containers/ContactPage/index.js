@@ -25,7 +25,7 @@ const CustomLink = styled.a`
 
 const ContactPage = () => {
   return (
-    <PageWrapper>
+    <PageWrapper bottomMargin={'4rem'}>
       <CustomTitle>
         <StyledTextName> Contact</StyledTextName>
         <StyledText style={{ marginLeft: '1rem' }}> Me </StyledText>
