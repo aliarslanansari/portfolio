@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "https://www.aliarslan.in/static/css/main.b952751f.chunk.css",
-    "main.js": "https://www.aliarslan.in/static/js/main.db576978.chunk.js",
-    "main.js.map": "https://www.aliarslan.in/static/js/main.db576978.chunk.js.map",
-    "runtime-main.js": "https://www.aliarslan.in/static/js/runtime-main.79447bb6.js",
-    "runtime-main.js.map": "https://www.aliarslan.in/static/js/runtime-main.79447bb6.js.map",
-    "static/css/2.bb0da62a.chunk.css": "https://www.aliarslan.in/static/css/2.bb0da62a.chunk.css",
-    "static/js/2.ec8379bf.chunk.js": "https://www.aliarslan.in/static/js/2.ec8379bf.chunk.js",
-    "static/js/2.ec8379bf.chunk.js.map": "https://www.aliarslan.in/static/js/2.ec8379bf.chunk.js.map",
-    "index.html": "https://www.aliarslan.in/index.html",
-    "static/css/2.bb0da62a.chunk.css.map": "https://www.aliarslan.in/static/css/2.bb0da62a.chunk.css.map",
-    "static/css/main.b952751f.chunk.css.map": "https://www.aliarslan.in/static/css/main.b952751f.chunk.css.map",
-    "static/js/2.ec8379bf.chunk.js.LICENSE.txt": "https://www.aliarslan.in/static/js/2.ec8379bf.chunk.js.LICENSE.txt",
-    "static/media/Pattern_Group.8fdb3793.svg": "https://www.aliarslan.in/static/media/Pattern_Group.8fdb3793.svg"
+    "main.css": "/static/css/main.b952751f.chunk.css",
+    "main.js": "/static/js/main.036ca464.chunk.js",
+    "main.js.map": "/static/js/main.036ca464.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.05751626.js",
+    "runtime-main.js.map": "/static/js/runtime-main.05751626.js.map",
+    "static/css/2.bb0da62a.chunk.css": "/static/css/2.bb0da62a.chunk.css",
+    "static/js/2.38795b31.chunk.js": "/static/js/2.38795b31.chunk.js",
+    "static/js/2.38795b31.chunk.js.map": "/static/js/2.38795b31.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.bb0da62a.chunk.css.map": "/static/css/2.bb0da62a.chunk.css.map",
+    "static/css/main.b952751f.chunk.css.map": "/static/css/main.b952751f.chunk.css.map",
+    "static/js/2.38795b31.chunk.js.LICENSE.txt": "/static/js/2.38795b31.chunk.js.LICENSE.txt",
+    "static/media/Pattern_Group.8fdb3793.svg": "/static/media/Pattern_Group.8fdb3793.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.79447bb6.js",
+    "static/js/runtime-main.05751626.js",
     "static/css/2.bb0da62a.chunk.css",
-    "static/js/2.ec8379bf.chunk.js",
+    "static/js/2.38795b31.chunk.js",
     "static/css/main.b952751f.chunk.css",
-    "static/js/main.db576978.chunk.js"
+    "static/js/main.036ca464.chunk.js"
   ]
 }
