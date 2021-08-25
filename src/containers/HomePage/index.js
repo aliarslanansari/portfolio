@@ -1,9 +1,12 @@
-import PageWrapper from '../../components/PageWrapper'
+import { Col, Row } from 'antd'
 import React from 'react'
-import BlogCard from '../../components/BlogCard'
-import { Row, Col } from 'antd'
-import PatternBG from '../../assets/Pattern_Group.svg'
 import { useHistory } from 'react-router-dom'
+import styled from 'styled-components'
+import PatternBG from '../../assets/Pattern_Group.svg'
+import BlogCard from '../../components/BlogCard'
+import PageWrapper from '../../components/PageWrapper'
+import ProjectCard from '../../components/ProjectCard'
+import ProjectPage from '../ProjectPage'
 import {
   Button,
   ButtonSecondary,
@@ -20,6 +23,7 @@ const HomePage = () => {
   const historyPushContact = () => {
     history.push('/contact')
   }
+
   return (
     <>
       <PageWrapper background={PatternBG}>
@@ -53,6 +57,7 @@ const HomePage = () => {
           link='https://blog.aliarslan.in/react-portals'
         />
       </PageWrapper>
+      <ProjectPage />
     </>
   )
 }
