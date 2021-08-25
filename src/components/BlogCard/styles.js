@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { getClickableLinkStyle } from '../../utils/styleUtils'
 
 export const CustomBlogCard = styled.div`
   width: 100%;
@@ -19,9 +20,14 @@ export const CustomLink = styled.a`
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  text-decoration-line: underline;
   color: #3355ff;
   cursor: pointer;
+  text-decoration: none;
+  color: #3355ff;
+  &:hover {
+    color: #3355ff;
+  }
+  ${getClickableLinkStyle()}
 `
 export const BlogTitle = styled.a`
   margin: 0;
