@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import PageWrapper from '../../components/PageWrapper'
 import ProjectCard from '../../components/ProjectCard'
+import { projectList } from '../../data'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
 import { CustomTitle, StyledText, StyledTextName } from '../BlogsPage/styles'
 
@@ -27,9 +28,15 @@ const ProjectPage = ({ showAll }) => {
         </CustomTitle>
       )}
       <Row gutter={16}>
-        {[1, 2].map((i) => (
-          <StyledCol xs={24} key={i} sm={24} md={12} lg={12} xl={12}>
-            <ProjectCard />
+        {projectList.map((project) => (
+          <StyledCol
+            xs={24}
+            key={project.title}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={12}>
+            <ProjectCard {...project} />
           </StyledCol>
         ))}
       </Row>

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import PatternBG from '../../assets/Pattern_Group.svg'
 import BlogCard from '../../components/BlogCard'
 import PageWrapper from '../../components/PageWrapper'
+import { blogList } from '../../data'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
 import ProjectPage from '../ProjectPage'
 import {
@@ -60,13 +61,10 @@ const HomePage = () => {
         </Row>
       </PageWrapper>
       <PageWrapper topMargin={'5rem'} bottomMargin={'4rem'}>
-        <BlogCard
-          title='Learn React Portals like a PRO.'
-          time='Aug 2, 2021'
-          readtime='4 minute read'
-          description='Learn React Portals, why do we need Portals, and learn how to implement it.'
-          link='https://blog.aliarslan.in/react-portals'
-        />
+        {blogList.map((blog) => (
+          <BlogCard key={blog.title} {...blog} />
+        ))}
+
         <hr style={{ borderTop: '1px solid #8196fa' }} />
         <Row>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}></Col>
