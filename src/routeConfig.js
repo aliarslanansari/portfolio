@@ -11,6 +11,7 @@ export const routeConfig = {
     render: lazyLoader(() => import('./containers/ProjectPage')),
     exact: true,
     path: '/project',
+    props: { showAll: true },
   },
   about: {
     render: lazyLoader(() => import('./containers/AboutPage')),

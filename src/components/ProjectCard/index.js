@@ -8,7 +8,6 @@ import {
   ProjectMetaContainer,
   ProjectTitle,
 } from './style'
-import DevResProj from '../../assets/dev-resources-app.PNG'
 import Ellipsis from 'ant-design-pro/lib/Ellipsis'
 
 const ProjectCard = ({ title, time, description, link, code, img }) => {
@@ -26,7 +25,7 @@ const ProjectCard = ({ title, time, description, link, code, img }) => {
           <ProjectDate>{`— ${time}`}</ProjectDate>
         </div>
         <ProjectDescription>
-          <Ellipsis length={100}>{description}</Ellipsis>
+          <Ellipsis length={130}>{description}</Ellipsis>
         </ProjectDescription>
         <CustomProjectLink>
           <a href={code} rel='noreferrer' target='_blank'>
