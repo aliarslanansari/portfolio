@@ -11,10 +11,11 @@ const CustomFooter = styled.footer`
   padding: 1rem 0;
   background: #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 8%;
 `
 
 const Footer = () => {
