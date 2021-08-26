@@ -9,6 +9,10 @@ import { routeConfig } from './routeConfig'
 import { GlobalStyle } from './utils/styleUtils'
 const MainWrapper = styled.div`
   padding-bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 700 })

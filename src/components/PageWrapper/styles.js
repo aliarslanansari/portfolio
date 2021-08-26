@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import { containerPadding } from '../../utils/styleUtils'
 
 export const Wrapper = styled.section`
+  width: 100%;
   ${(props) => containerPadding(props.isMobile)}
   ${(props) =>
     props.topMargin &&
