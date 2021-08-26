@@ -20,7 +20,7 @@ const CustomRouterLink = styled(Link)`
 `
 const ProjectPage = ({ showAll }) => {
   return (
-    <PageWrapper topMargin={'5rem'} bottomMargin={'4rem'}>
+    <PageWrapper bottomMargin={'4rem'}>
       {showAll && (
         <CustomTitle>
           <StyledText> My </StyledText>

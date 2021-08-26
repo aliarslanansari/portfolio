@@ -47,46 +47,45 @@ const AboutPage = () => {
               I organised events and hackathons like Coding Battle and
               TechnoUtsav.
             </p>
-            <p>
-              Here are some of the technologies I work with:
-              <ul>
-                <li>
-                  React with{' '}
-                  <CustomLink
-                    href='https://nextjs.org/'
-                    target='_blank'
-                    rel='noreferrer'>
-                    {' '}
-                    Nextjs{' '}
-                  </CustomLink>{' '}
-                  and{' '}
-                  <CustomLink
-                    href='https://styled-components.com/'
-                    target='_blank'
-                    rel='noreferrer'>
-                    Styled Components
-                  </CustomLink>{' '}
-                </li>
-                <li>
-                  Nodejs with Express and{' '}
-                  <CustomLink
-                    href='https://www.apollographql.com/'
-                    target='_blank'
-                    rel='noreferrer'>
-                    Apollo-GraphQL
-                  </CustomLink>
-                </li>
-                <li>
-                  Database like MongoDB, MySQL and{' '}
-                  <CustomLink
-                    href='https://aws.amazon.com/dynamodb/'
-                    target='_blank'
-                    rel='noreferrer'>
-                    DynamoDB
-                  </CustomLink>
-                </li>
-              </ul>
-            </p>
+            <p>Here are some of the technologies I work with:</p>
+            <ul>
+              <li>
+                React with{' '}
+                <CustomLink
+                  href='https://nextjs.org/'
+                  target='_blank'
+                  rel='noreferrer'>
+                  {' '}
+                  Nextjs{' '}
+                </CustomLink>{' '}
+                and{' '}
+                <CustomLink
+                  href='https://styled-components.com/'
+                  target='_blank'
+                  rel='noreferrer'>
+                  Styled Components
+                </CustomLink>{' '}
+              </li>
+              <li>
+                Nodejs with Express and{' '}
+                <CustomLink
+                  href='https://www.apollographql.com/'
+                  target='_blank'
+                  rel='noreferrer'>
+                  Apollo-GraphQL
+                </CustomLink>
+              </li>
+              <li>
+                Database like MongoDB, MySQL and{' '}
+                <CustomLink
+                  href='https://aws.amazon.com/dynamodb/'
+                  target='_blank'
+                  rel='noreferrer'>
+                  DynamoDB
+                </CustomLink>
+              </li>
+            </ul>
+
             <p>
               When i'm not coding, i love to play with figma, interact with
               people in the dev community on{' '}

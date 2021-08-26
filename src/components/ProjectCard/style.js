@@ -16,6 +16,7 @@ export const ProjectTitle = styled.a`
 export const ProjectImage = styled.img`
   width: 100%;
   border-radius: 0.5rem;
+  height: 13rem;
 `
 export const ProjectMetaContainer = styled.div`
   margin-top: -2rem;
