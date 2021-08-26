@@ -27,7 +27,11 @@ const CustomRouterLink = styled(Link)`
 `
 const HomePage = () => {
   const history = useHistory()
+
   const historyPushContact = () => {
+    history.push('/contact')
+  }
+  const historyPushProjects = () => {
     history.push('/contact')
   }
 
@@ -45,7 +49,7 @@ const HomePage = () => {
               love discussing about web performance and serverless architecture,
               teaching others to code and organising events like hackathons.
             </CustomSubtitle>
-            <Button>See my work</Button>
+            <Button onClick={historyPushProjects}>See my work</Button>
             <ButtonSecondary onClick={historyPushContact}>
               Contact me
             </ButtonSecondary>
