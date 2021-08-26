@@ -1,15 +1,15 @@
 import { useMediaQuery } from 'react-responsive'
+import { HashRouter as Router } from 'react-router-dom'
+import styled from 'styled-components'
 import './App.css'
-import Navbar from './components/Navbar/index'
-import HomePage from './containers/HomePage'
-import { GlobalStyle } from './utils/styleUtils'
-import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
-import BlogsPage from './containers/BlogsPage'
-import ContactPage from './containers/ContactPage'
 import Footer from './components/Footer/index'
-import ProjectPage from './containers/ProjectPage'
-import AboutPage from './containers/AboutPage'
-
+import Navbar from './components/Navbar/index'
+import Routes from './components/Routes'
+import { routeConfig } from './routeConfig'
+import { GlobalStyle } from './utils/styleUtils'
+const MainWrapper = styled.div`
+  padding-bottom: 5%;
+`
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 700 })
   return (
@@ -17,14 +17,9 @@ function App() {
       <Router>
         <GlobalStyle />
         <Navbar isMobile={isMobile} />
-        <Switch>
-          <Route render={() => <HomePage />} exact path='/' />
-          <Route render={() => <BlogsPage />} exact path='/blog' />
-          <Route render={() => <AboutPage />} exact path='/about' />
-          <Route render={() => <ProjectPage showAll />} exact path='/project' />
-          <Route render={() => <ContactPage />} exact path='/contact' />
-          <Route component={() => <Redirect to='/' />} />
-        </Switch>
+        <MainWrapper>
+          <Routes routeConfig={routeConfig} />
+        </MainWrapper>
       </Router>
       <Footer />
     </>
