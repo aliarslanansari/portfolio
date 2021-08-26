@@ -14,7 +14,7 @@ export const projectList = [
     title: 'DEV Resources',
     time: 'May 2021',
     description:
-      'Web App built using React/Typescript and AWS AppSync, All development resources at one place, access, create and share resources',
+      'Dev Resources web app built using React/Typescript, Apollo Client, AWS AppSync, redux/redux-saga for state management.',
     link: 'https://dev-resources-app.vercel.app/',
     code: 'https://github.com/aliarslanansari/dev-resources-app',
     img: 'https://raw.githubusercontent.com/aliarslanansari/dev-resources-app/master/dev-resources-app.PNG',
@@ -23,9 +23,27 @@ export const projectList = [
     title: 'DEV Connector',
     time: 'June 2021',
     description:
-      'Social Media Platform for Developers build using MERN Stack, where developers can share and connect.',
+      'Social Media Platform for Devs build using MERN Stack and redux for state management, where developers can share and connect.',
     link: 'https://dev-connector-wheat.vercel.app/',
     code: 'https://github.com/aliarslanansari/DevConnector',
     img: 'https://raw.githubusercontent.com/aliarslanansari/DevConnector/master/snapshot.PNG',
+  },
+  {
+    title: 'Auction Service Backend',
+    time: 'June 2021',
+    description:
+      'Build Serverless on serverless architecture using AWS services like lambda, SNS, SES, S3, DynamoDB.',
+    link: 'https://www.postman.com/collections/2f89d7ac1b9a92fabb73',
+    code: 'https://github.com/aliarslanansari/auction-service-serverless',
+    img: 'https://raw.githubusercontent.com/aliarslanansari/auction-service-serverless/master/auction-service-snapshot.png',
+  },
+  {
+    title: 'Restaurant Search App',
+    time: 'May  2020',
+    description:
+      'Restaurant-food search app built using React-Native, which fetches data from Zomato Search API.',
+    link: 'https://snack.expo.dev/@aliarslanansari/food-restaurant-search-react-native',
+    code: 'https://github.com/aliarslanansari/food-restaurant-search-react-native',
+    img: 'https://raw.githubusercontent.com/aliarslanansari/food-restaurant-search-react-native/master/food-app-snapshot.png',
   },
 ]
