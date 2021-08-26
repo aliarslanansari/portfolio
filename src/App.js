@@ -8,6 +8,7 @@ import BlogsPage from './containers/BlogsPage'
 import ContactPage from './containers/ContactPage'
 import Footer from './components/Footer/index'
 import ProjectPage from './containers/ProjectPage'
+import AboutPage from './containers/AboutPage'
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 700 })
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route render={() => <HomePage />} exact path='/' />
           <Route render={() => <BlogsPage />} exact path='/blog' />
+          <Route render={() => <AboutPage />} exact path='/about' />
           <Route
             render={() => <ProjectPage showTitle />}
             exact
