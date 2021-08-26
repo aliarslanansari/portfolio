@@ -32,7 +32,7 @@ const HomePage = () => {
     history.push('/contact')
   }
   const historyPushProjects = () => {
-    history.push('/contact')
+    history.push('/project')
   }
 
   return (
