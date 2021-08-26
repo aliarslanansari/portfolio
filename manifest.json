@@ -6,16 +6,6 @@
       "src": "A.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "A.ico",
-      "type": "image/ico",
-      "sizes": "192x192"
-    },
-    {
-      "src": "A.ico",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
