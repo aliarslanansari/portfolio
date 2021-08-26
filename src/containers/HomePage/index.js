@@ -1,11 +1,11 @@
 import { Col, Row } from 'antd'
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import PatternBG from '../../assets/Pattern_Group.svg'
 import BlogCard from '../../components/BlogCard'
 import PageWrapper from '../../components/PageWrapper'
-import ProjectCard from '../../components/ProjectCard'
+import { getClickableLinkStyle } from '../../utils/styleUtils'
 import ProjectPage from '../ProjectPage'
 import {
   Button,
@@ -18,6 +18,13 @@ import {
   StyledTextName,
 } from './styles'
 
+const CustomRouterLink = styled(Link)`
+  ${getClickableLinkStyle()}
+  color: #3355ff;
+  &:hover {
+    color: #3355ff;
+  }
+`
 const HomePage = () => {
   const history = useHistory()
   const historyPushContact = () => {
@@ -56,6 +63,19 @@ const HomePage = () => {
           description='Learn React Portals, why do we need Portals, and learn how to implement it.'
           link='https://blog.aliarslan.in/react-portals'
         />
+        <hr style={{ borderTop: '1px solid #8196fa' }} />
+        <Row>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}></Col>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={12}
+            style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <CustomRouterLink to='/blog'>See more blogs</CustomRouterLink>
+          </Col>
+        </Row>
       </PageWrapper>
       <ProjectPage />
     </>

@@ -21,11 +21,7 @@ function App() {
           <Route render={() => <HomePage />} exact path='/' />
           <Route render={() => <BlogsPage />} exact path='/blog' />
           <Route render={() => <AboutPage />} exact path='/about' />
-          <Route
-            render={() => <ProjectPage showTitle />}
-            exact
-            path='/project'
-          />
+          <Route render={() => <ProjectPage showAll />} exact path='/project' />
           <Route render={() => <ContactPage />} exact path='/contact' />
           <Route component={() => <Redirect to='/' />} />
         </Switch>
