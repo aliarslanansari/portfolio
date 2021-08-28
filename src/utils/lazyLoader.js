@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react'
+import Spinner from './../components/Spinner'
 
 const lazyLoader = (importFunc, fallback) => {
   const LazyComponent = lazy(importFunc)
@@ -11,13 +12,15 @@ const lazyLoader = (importFunc, fallback) => {
             style={{
               width: 100,
               margin: '0 auto',
-              position: 'fixed',
-              top: '40%',
-              left: '45%',
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              marginTop: '-12px',
+              marginLeft: '-12px',
               fontSize: '2rem',
               color: '#3355ff',
             }}>
-            Loading...
+            <Spinner />
           </div>
         )
       }>
