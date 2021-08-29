@@ -7,6 +7,14 @@ export const blogList = [
       'Learn React Portals, why do we need Portals, and learn how to implement it.',
     link: 'https://blog.aliarslan.in/react-portals',
   },
+  {
+    title: 'Why use Typescript over Javascript?',
+    time: 'Aug 30, 2021',
+    readtime: '3 minute read',
+    description:
+      'The goal of TypeScript is to help catch mistakes early through a type system and to make JavaScript development more efficient.',
+    link: 'https://blog.aliarslan.in/why-use-typescript-over-javascript',
+  },
 ]
 
 export const projectList = [
