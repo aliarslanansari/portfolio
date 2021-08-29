@@ -16,10 +16,7 @@ const ProjectCard = ({ title, time, description, link, code, img }) => {
       <ProjectImage src={img} alt='React Portals' />
       <ProjectMetaContainer>
         <div style={{ marginTop: '0.5rem' }}>
-          <ProjectTitle
-            href={'https://blog.aliarslan.in/react-portals'}
-            target='_blank'
-            rel='noreferrer'>
+          <ProjectTitle href={code} target='_blank' rel='noreferrer'>
             {title}
           </ProjectTitle>
           <ProjectDate>{`— ${time}`}</ProjectDate>
