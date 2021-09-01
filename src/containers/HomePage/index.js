@@ -61,7 +61,7 @@ const HomePage = () => {
         </Row>
       </PageWrapper>
       <PageWrapper topMargin={'5rem'} bottomMargin={'4rem'}>
-        {blogList.map((blog) => (
+        {blogList.slice(0, 2).map((blog) => (
           <BlogCard key={blog.title} {...blog} />
         ))}
 

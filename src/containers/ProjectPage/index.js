@@ -19,6 +19,7 @@ const CustomRouterLink = styled(Link)`
   }
 `
 const ProjectPage = ({ showAll }) => {
+  const projects = showAll ? projectList : projectList.slice(0, 2)
   return (
     <PageWrapper bottomMargin={'4rem'}>
       {showAll && (
@@ -28,7 +29,7 @@ const ProjectPage = ({ showAll }) => {
         </CustomTitle>
       )}
       <Row gutter={16}>
-        {projectList.map((project) => (
+        {projects.map((project) => (
           <StyledCol
             xs={24}
             key={project.title}
