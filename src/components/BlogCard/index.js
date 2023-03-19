@@ -14,7 +14,6 @@ const BlogCard = ({
   link,
   onClick,
 }) => {
-  console.log({onClick})
   return (
     <CustomBlogCard>
       <BlogTitle href={link} target="_blank" rel="noreferrer">

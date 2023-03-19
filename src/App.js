@@ -17,7 +17,7 @@ const MainWrapper = styled.div`
   flex-direction: column;
 `
 
-mixpanel.init("7e5df78476de3df1a676917ee9df97ea", { debug: true });
+mixpanel.init(process.env.REACT_APP_MIXPANEL_PROJECT_TOKEN);
 mixpanel.track("APP_OPENED")
 
 function App() {
