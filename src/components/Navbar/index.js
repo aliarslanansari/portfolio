@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { containerPadding, getClickableLinkStyle } from '../../utils/styleUtils'
 import MobileNavbar from '../MobileNavbar'
 import { Link } from 'react-router-dom'
+import mixpanel from 'mixpanel-browser'
 const StyledNavbar = styled.nav`
   user-select: none;
   background-color: white;
@@ -52,17 +53,22 @@ const MenuItem = styled(Link)`
 `
 
 const Navbar = ({ isMobile }) => {
+
+  const onNavClick = (itemName) => () =>{
+    mixpanel.track("NAV_ITEM_CLICKED", {itemName})
+  } 
+
   return (
     <StyledNavbar isMobile={isMobile}>
-      <LogoText to='/'>Ali Arslan</LogoText>
+      <LogoText to='/' onClick={onNavClick('logo')}>Ali Arslan</LogoText>
       {isMobile ? (
         <MobileNavbar />
       ) : (
         <Menu>
-          <MenuItem to='/blog'>Blog</MenuItem>
-          <MenuItem to='/project'>Project</MenuItem>
-          <MenuItem to='/about'>About</MenuItem>
-          <MenuItem to='/contact'>Contact</MenuItem>
+          <MenuItem to='/blog' onClick={onNavClick('blog')}>Blog</MenuItem>
+          <MenuItem to='/project' onClick={onNavClick('project')}>Project</MenuItem>
+          <MenuItem to='/about' onClick={onNavClick('about')}>About</MenuItem>
+          <MenuItem to='/contact' onClick={onNavClick('contact')}>Contact</MenuItem>
         </Menu>
       )}
     </StyledNavbar>

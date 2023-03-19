@@ -7,6 +7,8 @@ import Navbar from './components/Navbar/index'
 import Routes from './components/Routes'
 import { routeConfig } from './routeConfig'
 import { GlobalStyle } from './utils/styleUtils'
+import mixpanel from 'mixpanel-browser'
+
 const MainWrapper = styled.div`
   padding-bottom: 5%;
   width: 100%;
@@ -14,6 +16,10 @@ const MainWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
 `
+
+mixpanel.init("7e5df78476de3df1a676917ee9df97ea", { debug: true });
+mixpanel.track("APP_OPENED")
+
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 700 })
   return (
