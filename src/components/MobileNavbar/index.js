@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { getClickableLinkStyle } from '../../utils/styleUtils'
 import { Link } from 'react-router-dom'
+import mixpanel from 'mixpanel-browser'
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -61,18 +62,24 @@ const CustomLink = styled(Link)`
   }
 `
 const Menu = ({ open, setOpen }) => {
+
+  
+  const onNavClick = (itemName) => () =>{
+    mixpanel.track("NAV_ITEM_CLICKED", {itemName})
+  } 
+
   return (
     <StyledMenu open={open} onClick={() => setOpen((o) => !o)}>
-      <MenuItem>
+      <MenuItem onClick={onNavClick('blog')}>
         <CustomLink to='/blog'>Blog</CustomLink>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={onNavClick('project')}>
         <CustomLink to='project'>Project</CustomLink>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={onNavClick('about')}>
         <CustomLink to='about'>About</CustomLink>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={onNavClick('contact')}>
         <CustomLink to='contact'>Contact</CustomLink>
       </MenuItem>
     </StyledMenu>

@@ -6,21 +6,28 @@ import {
   CustomLink,
 } from './styles'
 
-const BlogCard = ({ title, description, time, readtime, link }) => {
+const BlogCard = ({
+  title,
+  description,
+  time,
+  readtime,
+  link,
+  onClick,
+}) => {
   return (
     <CustomBlogCard>
-      <BlogTitle href={link} target='_blank' rel='noreferrer'>
+      <BlogTitle href={link} target="_blank" rel="noreferrer">
         {title}
       </BlogTitle>
       <BlogTiming>
         Published on {time} {readtime && `— ${readtime}`}
       </BlogTiming>
       <BlogDescription>{description}</BlogDescription>
-      <CustomLink href={link} target='_blank'>
+      <CustomLink onClick={onClick} href={link} target="_blank">
         Read this blog
       </CustomLink>
     </CustomBlogCard>
-  )
-}
+  );
+};
 
 export default BlogCard
